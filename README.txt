@@ -43,7 +43,7 @@ or using the Software Center.
 === Installation ===
 Clone the repository using:
 
-hg clone ssh://hg@bitbucket.org/haroldsoh/otl
+git clone ssh://git@bitbucket.org/haroldsoh/otl
 
 Change into the otl directory, create a build directory and cmake as usual.
 
