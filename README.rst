@@ -2,9 +2,9 @@
 Online Temporal Learning (OTL) Library
 ======================================
 
-Copyright Harold Soh 2011, 2012
-haroldsoh@gmail.com
-haroldsoh@imperial.ac.uk
+.. image:: https://api.travis-ci.org/liangfu/otl.svg
+
+Copyright Harold Soh 2011, 2012 <haroldsoh@gmail.com, haroldsoh@imperial.ac.uk>
 
 Introduction
 ============
@@ -34,8 +34,6 @@ The MATLAB code is in otl_matlab. You will need to:
 2. Compile the helper mex files: Run compileHelpers.m
 
 That's it! Have a look in examples (particularly NoisySin_FMemOGP2_Opt.m for a full-fledged example).
-
-== C++ OTL ==
 
 Pre-requisites
 ==============
@@ -76,7 +74,9 @@ Options: Python Bindings and Doxygen Documentation
 
 If you want the Python bindings and the Doxygen generated documentation, please turn on the appropriate option:
 
-cmake ../ -DBUILD_PYTHON_BINDINGS=ON -DBUILD_DOCS=ON
+.. code-block:: bash
+
+ cmake ../ -DBUILD_PYTHON_BINDINGS=ON -DBUILD_DOCS=ON
 
 If you specified the Python bindings, you'll have additional .so files and Doxygen comments will be in the doc folder.
 
@@ -89,7 +89,9 @@ To use these bindings, head to the src/MATLAB_mex directory.
 Fire up MATLAB and edit the compileSTORKGP_mex.m file. Run it. 
 You should then be able to use the mex files. 
 
-=== Getting Started Guides ===
+Getting Started Guides
+======================
+
 For the getting started guides, please refer to the OTL Wiki: https://bitbucket.org/haroldsoh/otl/wiki/Home
 
 Usage and License
