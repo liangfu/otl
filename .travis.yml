@@ -3,7 +3,8 @@ language: cpp
 install:
  - wget http://bitbucket.org/eigen/eigen/get/3.2.6.tar.gz
  - tar zxvf 3.2.6.tar.gz 
- - mv eigen-eigen-c58038c56923 eigen3
+ - mv eigen-eigen-c58038c56923 src/eigen3
+ - rm -f 3.2.6.tar.gz
 
 script:
  - mkdir build
