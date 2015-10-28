@@ -1,9 +1,14 @@
+======================================
 Online Temporal Learning (OTL) Library
+======================================
+
 Copyright Harold Soh 2011, 2012
 haroldsoh@gmail.com
 haroldsoh@imperial.ac.uk
 
-== Introduction ==
+Introduction
+============
+
 The Online Temporal Learning (OTL) C++ library implements several memory structures (a neural reservoir and sliding window) and online learning methods (RLS, Sparse Online Gaussian Process). Included in the library are two "high-level" online learning methods: the Online Echo State Gaussian Process (OESGP) and the Online Infinite Echo-State GP (also called the Spatial-Temporal Online Recursive Kernel Gaussian Process (STORK-GP)). Academic papers detailing these methods:
 
 OESGP: H. Soh and Y. Demiris, “Iterative Temporal Learning and Prediction with the Sparse Online Echo State Gaussian Process”, International Joint Conference on Neural Networks (IJCNN-2012), Brisbane, Australia (to appear) 
@@ -20,7 +25,8 @@ At its current state, OTL is meant for use by individuals familiar with C++/Pyth
 
 Have fun! For more up-to-date information, refer to the OTL wiki: https://bitbucket.org/haroldsoh/otl/wiki/Home
 
-== MATLAB OTL ==
+MATLAB OTL
+==========
 
 The MATLAB code is in otl_matlab. You will need to:
 
@@ -31,38 +37,52 @@ That's it! Have a look in examples (particularly NoisySin_FMemOGP2_Opt.m for a f
 
 == C++ OTL ==
 
-=== Pre-requisites ===
+Pre-requisites
+==============
+
 OTL requires the Eigen C++ Matrix library and cmake. It also needs SWIG for the Python bindings. You can download Eigen at http://eigen.tuxfamily.org. 
 
 If you're using Ubuntu, you can install these pre-reqs using apt-get:
 
-sudo apt-get install libeigen3-dev cmake swig
+.. code-block:: bash
+
+ sudo apt-get install libeigen3-dev cmake swig
 
 or using the Software Center.
 
-=== Installation ===
+Installation
+============
+
 Clone the repository using:
 
-git clone ssh://git@bitbucket.org/haroldsoh/otl
+.. code-block:: bash
+
+ git clone ssh://git@bitbucket.org/haroldsoh/otl
 
 Change into the otl directory, create a build directory and cmake as usual.
 
-cd otl
-mkdir build
-cd build
-cmake ../
-make
+.. code-block:: bash
+
+ cd otl
+ mkdir build
+ cd build
+ cmake ../
+ make
 
 Everything should compile and you should have a libOTL.a library file. 
 
-=== Options: Python Bindings and Doxygen Documentation ===
+Options: Python Bindings and Doxygen Documentation
+==================================================
+
 If you want the Python bindings and the Doxygen generated documentation, please turn on the appropriate option:
 
 cmake ../ -DBUILD_PYTHON_BINDINGS=ON -DBUILD_DOCS=ON
 
 If you specified the Python bindings, you'll have additional .so files and Doxygen comments will be in the doc folder.
 
-=== Experimental Matlab Bindings ===
+Experimental Matlab Bindings
+============================
+
 Experimental MATLAB bindings are available for the STORKGP algorithm. OESGP bindings will soon be available. This has been tested on a 64-bit machine.
 
 To use these bindings, head to the src/MATLAB_mex directory.
@@ -72,7 +92,9 @@ You should then be able to use the mex files.
 === Getting Started Guides ===
 For the getting started guides, please refer to the OTL Wiki: https://bitbucket.org/haroldsoh/otl/wiki/Home
 
-=== Usage and License ===
+Usage and License
+=================
+
 This code is DUAL-LICENSED. 
 
 If you are using this code in non-commercial settings, e.g.,  at academic institutions, teaching institutes or for hobby, learning and research: you can use this code freely, i.e., make copies, distribute and modify the code for any non-commercial purpose provided the original license and this copyright notice are included. If you do use this code in your research, please cite:
