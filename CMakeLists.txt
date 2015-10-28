@@ -60,6 +60,9 @@ set(OTL_SOURCES
     LICENSE.txt
 )
 
+add_subdirectory(src/eigen3)
+include_directories(src)
+
 add_library(OTL ${OTL_SOURCES})
 
 include_directories(src/libOTL)
